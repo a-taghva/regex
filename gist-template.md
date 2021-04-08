@@ -15,13 +15,10 @@ Briefly summarize the regex you will be describing and what you will explain. In
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+- [Demo](#demo)
 
 ## Regex Components
 
@@ -39,12 +36,12 @@ We can see if it ends with a charcter, number or underscore by using `\w$`<br />
 <pre>/^#?([a-f0-9]<span style="color: red">{6}</span>|[a-f0-9]<span style="color: red">{3}</span>)$/</pre>
 `Quantity {n}`
 
-#### The exact count {3}
+#### 1. The exact count {3}
 `\d{3}` is same as `\d\d\d`
 it look for 3 digits
 
 
-#### The range {3,6}
+#### 2. The range {3,6}
 `\d{3,6}` matches 3-6 times.
 `\d{3,}` matches 3 or more digits.
 <pre>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</pre>
@@ -63,16 +60,28 @@ for example:<br />
   - `\w`: either a letter of Latin alphabet or a digit or underscore.<br />
   - `\s`: includes tabs `\t`, newlines `\n` and some other rare characters, `\v`, `\f` and `\r`<br />
 
-### Flags
 
 ### Grouping and Capturing
+<pre>/^#?<span style="color: red">(</span>[a-f0-9]{6}|</span>[a-f0-9]{3}<span style="color: red">)</span>$/</pre>
+`(...)`, this is called a capturing group.
+
+#### Example: yoyoyo
+the pattern `yo+` means `y` character followed by `o` repeated one or more times, like `yooo`
+
+Paranthesis group characters together, so `(yo)+` means `yo`, `yoyo`, `yoyoyo` and so on
 
 ### Bracket Expressions
+For example `[aeiou]` means any of the 5 characters: `a`, `e`, `i`, `o`, `u`
 
+<pre>[a-f0-9]</pre>
+`a-f` is a character in range from `a` to `z`<br>
+`0-9` is a digit from `0` to `5`
 
-### Greedy and Lazy Match
+### Demo
+
+## Back Reference
+I use [javascript.info](https://javascript.info) as my documentation
 
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
