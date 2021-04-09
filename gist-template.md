@@ -1,6 +1,6 @@
 # Regex Tutorial
 
-Matching a Hex Value: 
+## Matching a Hex Value: 
 <pre>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</pre>
 
 
@@ -23,17 +23,15 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-<pre>/<span style="color: red">^</span>#?([a-f0-9]{6}|[a-f0-9]{3})<span style="color: red">$</span>/</pre>
+<pre>/^a dog$/</pre>
 `^` and `$` are called "anchors" in regex.<br />
 The caret `^` matches at the beginning of the text, and the dollar `$` – at the end.
 
 The pattern `^#` means string starts with `#`<br />
 We can see if it ends with a charcter, number or underscore by using `\w$`<br />
 
-<span style="color: red"></span>
-
 ### Quantifiers
-<pre>/^#?([a-f0-9]<span style="color: red">{6}</span>|[a-f0-9]<span style="color: red">{3}</span>)$/</pre>
+<pre>[a-z0-9]{2,6}</pre>
 `Quantity {n}`
 
 #### 1. The exact count {3}
@@ -47,7 +45,7 @@ it look for 3 digits
 <pre>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</pre>
 
 ### OR Operator
-<pre>/^#?([a-f0-9]{6}<span style="color: red">|</span>[a-f0-9]{3})$/</pre>
+<pre>/(b|f)ox/ => will match both <b><i>box</i></b> and <b><i>fox</i></b></pre>
 square brackets are similar to OR Operator, for instance gr[ae]y is either gray or grey
 
 `gr(a|e)y` matches <u>gray</u> or <u>grey</u><br />
@@ -62,7 +60,7 @@ for example:<br />
 
 
 ### Grouping and Capturing
-<pre>/^#?<span style="color: red">(</span>[a-f0-9]{6}|</span>[a-f0-9]{3}<span style="color: red">)</span>$/</pre>
+<pre>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</pre>
 `(...)`, this is called a capturing group.
 
 #### Example: yoyoyo
@@ -78,10 +76,13 @@ For example `[aeiou]` means any of the 5 characters: `a`, `e`, `i`, `o`, `u`
 `0-9` is a digit from `0` to `5`
 
 ### Demo
+!["test"](./assets/images/rgx.png)
 
 ## Back Reference
-I use [javascript.info](https://javascript.info) as my documentation
+- I use [javascript.info](https://javascript.info) as my documentation!
+- [Regexer](https://regexr.com)
 
 
 ## Author
 
+my github: [a-taghva](https://github.com/a-taghva)
