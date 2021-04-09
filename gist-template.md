@@ -73,7 +73,7 @@ Paranthesis group characters together, so `(yo)+` means `yo`, `yoyo`, `yoyoyo` a
 For example `[aeiou]` means any of the 5 characters: `a`, `e`, `i`, `o`, `u`
 
 <pre>[a-f0-9]</pre>
-`a-f` is a character in range from `a` to `z`<br>
+`a-f` is a character in range from `a` to `z`<br />
 `0-9` is a digit from `0` to `5`
 
 ### Demo
@@ -86,4 +86,5 @@ For example `[aeiou]` means any of the 5 characters: `a`, `e`, `i`, `o`, `u`
 
 ## Author
 
-my github: [a-taghva](https://github.com/a-taghva)
+my github: [a-taghva](https://github.com/a-taghva)<br />
+github gist: [gist](https://gist.github.com/a-taghva/d5548c1401e3515973e481e1c4ca113a)
