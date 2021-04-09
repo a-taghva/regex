@@ -6,7 +6,8 @@
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Here's a regex expression which matches <b>Hex Values!</b><br />
+In this document you can findout what each part of the expression means
 <pre>/^#?([a-f0-9]{6}|[a-f0-9]{3})$/</pre>
 
 ## Table of Contents
